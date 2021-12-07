@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'FirstApp',
     'rest_framework',
-    'SecondApp'
+    'SecondApp',
+    'ThirdApp',
 ]
 
 MIDDLEWARE = [

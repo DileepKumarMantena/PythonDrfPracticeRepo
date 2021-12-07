@@ -5,7 +5,9 @@ from rest_framework.schemas import get_schema_view
 
 urlpatterns = [
     path('FirstApp/', include('FirstApp.urls')),
-    path('SecondApp/',include("SecondApp.urls")),
+    path('SecondApp/', include("SecondApp.urls")),
+    path('ThirdApp/', include('ThirdApp.urls')),
+
     path('admin/', admin.site.urls),
     path('openapi/', get_schema_view(
         title="Swagger",
@@ -13,7 +15,7 @@ urlpatterns = [
     ), name='openapi-schema'),
     path('docs/', TemplateView.as_view(
         template_name='swagger.html',
-        extra_context={'schema_url':'openapi-schema'}
+        extra_context={'schema_url': 'openapi-schema'}
     ), name='swagger-ui'),
 
 ]

@@ -12,16 +12,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Member',
+            name='Bodymass',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('first_name', models.CharField(max_length=255)),
-                ('last_name', models.CharField(max_length=255)),
-                ('grade', models.CharField(max_length=255)),
-                ('age', models.IntegerField()),
+                ('name', models.CharField(max_length=100)),
+                ('height', models.IntegerField()),
+                ('weight', models.IntegerField()),
+                ('bmi', models.IntegerField()),
             ],
-            options={
-                'db_table': 'Drf_Member_Table',
-            },
         ),
     ]
