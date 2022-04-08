@@ -1,0 +1,18 @@
+Task1 Details:
+	1)write a post call for registering the admin(firstname,lastname,username,mobilemumber,email,department(enum)
+	2)write a login function for that admin with mobilenumber and password
+	3)write a get call with department name
+	validations:
+		1)username must be more then 3 letters
+		2)password must be more then 8 letters
+		3)email must be unique
+		4)one admin can select only one department
+	3)write a post call for reg and login for student
+	4)write a post call for student login
+	5)write a get call for student based on his department 
+	validations:
+		1)username must be more then 3 letters
+		2)password must be more then 8 letters
+		3)email must be unique
+		4)one student can select only one department
+
